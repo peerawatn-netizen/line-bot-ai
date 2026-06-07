@@ -3,7 +3,7 @@ import { GoogleGenAI, ThinkingLevel } from "@google/genai";
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
 
 const DEFAULT_REPLY =
-  "ขออภัยค่ะ ส่วนนี้แอดมินขอให้ทีมงานติดต่อกลับเพื่อให้ข้อมูลที่ถูกต้องนะคะ 🙏 รบกวนทิ้งเบอร์หรือรอสักครู่ เดี๋ยวมีเจ้าหน้าที่มาดูแลต่อค่ะ";
+  "แอดมินขอให้ทีมงานติดต่อกลับเพื่อให้ข้อมูลที่ถูกต้องนะคะ 🙏 รบกวนทิ้งเบอร์หรือรอสักครู่ เดี๋ยวมีเจ้าหน้าที่มาดูแลต่อค่ะ";
 
 function buildPrompt(faqCsv: string, userMessage: string): string {
   return `<role>
